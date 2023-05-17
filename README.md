@@ -114,7 +114,7 @@ void PrenderDisplay(int numero)
 ~~~
 
 ## 🛗 Link al proyecto:
-- [proyecto](https://www.tinkercad.com/things/2EVauB1FZrG-parcial-montacargas/editel)
+- [Proyecto](https://www.tinkercad.com/things/2EVauB1FZrG-parcial-montacargas/editel)
 
 ---
 
