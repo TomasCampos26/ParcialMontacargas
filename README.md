@@ -1,22 +1,17 @@
 # DocumentacionDojo2
-![Tinkercad](ArduinoTinkercad.jpg)
+![Tinkercad](![ArduinoTinkercad (1)](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/d69e5246-4c8f-49a0-a250-39338888852d))
 
 
 ## Integrantes 
 - Campos Tomás
-- Atoche Luis
-- Escobar Rodrigo
-- Tomas Blanco Rivas
 
-
-## Proyecto: Subte
-![image](https://github.com/TomasCampos26/DocumentacionDojo2/assets/123908697/68755d25-31c7-4f27-b6ca-6ed75afce6d5)
+## Proyecto: Montacargas
+![image](![PARCIAL MONTACARGAS](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/c8233e7c-f5eb-4ff1-8d85-1a5e0a754854))
 
 
 ## Descripción
-El proyecto trata de una simulación de un subte, en la cual van prendiendo los leds indicando en que parada te
-encontras actualmente (Constitución, San Juan, Independencia, Moreno), cuantas paradas te faltan para llegar a
-la terminal y realiza un sonido al parar el subte y abrir sus puertas en el caso de que haya personas no videntes.
+El proyecto trata de una simulación de un montacargas. Con el botón 1 el montacargas sube un solo piso. Con el botón 2, baja un solo piso.
+Y con el botón 3 para el circuito hasta que ya no lo presiones.
 
 ## Función principal
 Esta funcion se encarga de prender en el display el numero que le envias por parámetro.
@@ -62,16 +57,64 @@ void PrenderDisplay(int numero)
     digitalWrite(C, HIGH);
     digitalWrite(G, HIGH);
     digitalWrite(D, HIGH);
+    break;
+    
+    case 4:
+    digitalWrite(F, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
     break;  
+    
+    case 5:
+    digitalWrite(A, HIGH);
+    digitalWrite(F, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(D, HIGH);
+    break;  
+    
+    case 6:
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(G, HIGH);
+    digitalWrite(D, HIGH);
+    break;  
+    
+    case 7:
+    digitalWrite(A, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);   
+    digitalWrite(G, HIGH);
+    break;  
+    
+    case 8:
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(E, HIGH);
+    digitalWrite(F, HIGH);   
+    digitalWrite(G, HIGH);
+    break;  
+    
+    case 9:
+    digitalWrite(A, HIGH);
+    digitalWrite(B, HIGH);
+    digitalWrite(C, HIGH);
+    digitalWrite(D, HIGH);
+    digitalWrite(F, HIGH);   
+    digitalWrite(G, HIGH);
+    break;
   } 
 }
 ~~~
 
-## 🚅 Link al proyecto
-- [proyecto](https://www.tinkercad.com/things/gO5GRBbJRg1-dojo-2/editel)
-
-## :tv: Link al video del funcionamiento
-- [video](https://youtu.be/AJGb5cAVgBU)
+## 🛗 Link al proyecto:
+- [proyecto](https://www.tinkercad.com/things/2EVauB1FZrG-parcial-montacargas/editel)
 
 ---
 
