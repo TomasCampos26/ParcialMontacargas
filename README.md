@@ -6,17 +6,19 @@
 - Campos Tomás
 
 ## Proyecto: Montacargas
-![PARCIAL MONTACARGAS](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/c8233e7c-f5eb-4ff1-8d85-1a5e0a754854)
+![PARCIAL MONTACARGAS]![image](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/e47fe0f0-e205-43fd-a611-5578cc4a5b1e)
+
 
 
 ## Descripción
 El proyecto trata de una simulación de un montacargas. Con el botón 1 el montacargas sube un solo piso. Con el botón 2, baja un solo piso.
 Y con el botón 3 para el circuito hasta que ya no lo presiones.
 
-## Función principal
+## Funciónes principales
 Esta funcion se encarga de prender en el display el numero que le envias por parámetro.
 
 ~~~ C (lenguaje en el que esta escrito)
+1.
 void PrenderDisplay(int numero)
 {
   digitalWrite(A, LOW);
@@ -110,6 +112,95 @@ void PrenderDisplay(int numero)
     digitalWrite(G, HIGH);
     break;
   } 
+}
+
+2.
+void funcion_bomberos()
+{
+  digitalWrite(LED_AZUL, HIGH);
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_ROJO, LOW);
+  while(digitalRead(boton_bomberos)== 0)
+  {
+    Serial.println("LLAMANDO A LOS BOMBEROS");   
+  }
+  while(digitalRead(boton_bomberos)== 1)
+  {
+    Serial.println("LLAMANDO A LOS BOMBEROS");   
+  }
+  pulsador_anterior = digitalRead (boton_bomberos); 
+}
+
+3.
+void detener_montacargas()
+{
+  digitalWrite(LED_ROJO, HIGH);
+  digitalWrite(LED_VERDE, LOW);
+  digitalWrite(LED_AMARILLO, HIGH);
+  while(digitalRead (boton3) == 0)// entra al primer while hasta que el boton sea 1
+  {
+    Serial.println("PARADA 1");
+  }
+  while(digitalRead (boton3) == 1)
+  {
+    Serial.println("PARADA 2");   
+  }
+  pulsador_anterior = digitalRead (boton3);
+  digitalWrite(LED_AMARILLO, LOW);
+  digitalWrite(LED_ROJO, LOW);
+}
+
+4.
+void subirMontacargas()
+{
+  digitalWrite(LED_ROJO, LOW);
+  digitalWrite(LED_VERDE, HIGH);
+  numero += 1;
+  
+  for (int i = 0; i <= 3000; i += 10) 
+  {
+    if (digitalRead(boton3) == 0 && digitalRead(boton3) != pulsador_anterior)
+    {
+      detener_montacargas();
+    }
+    if(digitalRead(boton_bomberos) == 0 && digitalRead(boton_bomberos) != pulsador_anterior)
+    {
+      funcion_bomberos();
+    }
+    else if (digitalRead(boton3) == 1) //reset de pulsador anterior
+    {
+      pulsador_anterior = 1; 
+    }
+    digitalWrite(LED_VERDE, HIGH);
+    delay(10); 
+  }  
+  digitalWrite(LED_VERDE, LOW);
+}
+
+5.
+void bajarMontacargas()
+{
+  digitalWrite(LED_ROJO, LOW);
+  digitalWrite(LED_VERDE, HIGH);
+  numero -= 1;
+   for (int i = 0; i <= 3000; i += 10) 
+  {
+    if (digitalRead(boton3) == 0 && digitalRead(boton3) != pulsador_anterior)
+    {
+      detener_montacargas();
+    }
+    if(digitalRead(boton_bomberos) == 0 && digitalRead(boton_bomberos) != pulsador_anterior)
+    {
+      funcion_bomberos();
+    }
+    else if (digitalRead(boton3) == 1)
+    {
+      pulsador_anterior = 1;
+    }
+    digitalWrite(LED_VERDE, HIGH);
+    delay(10);
+  }
+  digitalWrite(LED_VERDE, LOW);
 }
 ~~~
 
