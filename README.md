@@ -6,7 +6,8 @@
 - Campos Tomás
 
 ## Proyecto: Montacargas
-![PARCIAL MONTACARGAS]![image](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/e47fe0f0-e205-43fd-a611-5578cc4a5b1e)
+![PARCIAL MONTACARGAS]!![image](https://github.com/TomasCampos26/ParcialMontacargas/assets/123908697/bae0f798-7a60-4260-a45d-d8355f67e3f2)
+
 
 
 
