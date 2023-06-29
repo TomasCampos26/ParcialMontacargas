@@ -113,7 +113,8 @@ void PrenderDisplay(int numero)
     break;
   } 
 }
-
+~~~
+~~~
 2.
 void funcion_bomberos()
 {
@@ -130,7 +131,8 @@ void funcion_bomberos()
   }
   pulsador_anterior = digitalRead (boton_bomberos); 
 }
-
+~~~
+~~~
 3.
 void detener_montacargas()
 {
@@ -149,7 +151,8 @@ void detener_montacargas()
   digitalWrite(LED_AMARILLO, LOW);
   digitalWrite(LED_ROJO, LOW);
 }
-
+~~~
+~~~
 4.
 void subirMontacargas()
 {
@@ -176,7 +179,8 @@ void subirMontacargas()
   }  
   digitalWrite(LED_VERDE, LOW);
 }
-
+~~~
+~~~
 5.
 void bajarMontacargas()
 {
