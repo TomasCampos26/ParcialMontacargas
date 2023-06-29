@@ -205,7 +205,7 @@ void bajarMontacargas()
 ~~~
 
 ## 🥇 Link al proyecto:
-- [Proyecto]https://www.tinkercad.com/things/d7a2zqCZ2sz-parcial-montacargasrecuperatorio/editel
+- [Proyecto](https://www.tinkercad.com/things/d7a2zqCZ2sz-parcial-montacargasrecuperatorio/editel)
 
 ---
 
